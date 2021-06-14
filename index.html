@@ -24,7 +24,30 @@
         <section>studies</section>
          <section>technical skills</section>
           <section>contact form </section>
-    
+        
+     <form action="" method="get" class="form-contact">
+      <div class="form-input">
+        <label for="name">Name </label>
+        <input type="text" name="name" id="name" required />
+      </div>
+
+      <div class="form-input">
+        <label for="email">Email </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="form-input">
+        <label for="message">Message </label>
+        <textarea rows="5" name="message" id="message" required></textarea>
+      </div>
+
+      <div class="form-submit">
+        <input id="submitbutton" type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
     
         <footer></footer>
     </body>
