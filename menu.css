@@ -56,19 +56,21 @@
 
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
-
-.carousel {
-  background: black;
+body { font-family: sans-serif; 
+background-color: white;
 }
 
+.carousel {
+  background: white;
+}
+/* containeur carousel */
 .carousel-cell {
-  width: auto;
+  width: 66px;
   height: 200px;
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
-  display:         flex;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
@@ -76,10 +78,12 @@ body { font-family: sans-serif; }
           align-items: center;
 }
 
+
+/* height width image */
 .carousel-cell img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 400%;
+  max-height: 400%;
   /* dim unselected */
   opacity: 0.7;
   -webkit-transform: scale(0.85);
@@ -89,6 +93,7 @@ body { font-family: sans-serif; }
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
           transition: opacity 0.3s, transform 0.3s, filter 0.3s;
 }
+
 
 /* brighten selected image */
 .carousel-cell.is-selected img {
@@ -136,4 +141,24 @@ body { font-family: sans-serif; }
 .flickity-prev-next-button:disabled {
   display: none;
 }
- /* fin carousel  */
+ 
+
+
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+
+/* fin carousel  */
