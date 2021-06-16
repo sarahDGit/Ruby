@@ -1,0 +1,41 @@
+#origine {
+    display: inline-grid;
+
+
+
+}
+
+.origine {
+    display: grid;
+    justify-content: center;
+    background-color: blanchedalmond;
+
+
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+    color: #DDB0CE;
+
+    
+}
+#infos {
+   display: grid;
+   justify-content: center;
+   grid-template-columns:30vw 30vw 30vw;
+   grid-template-rows: 20vw 20vw;
+}
+
+
+
+.contenu {
+    
+    background-color: crimson;
+
+}
+
+.img {
+    background-color: darkblue;
+
+}
