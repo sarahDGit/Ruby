@@ -4,23 +4,26 @@
     padding: 5px;
     text-align: center;
   }
-  
-  #bodycontact {
-    border-color: #FFBEA2;
+  #sectionContact{
+    display: flex;
+    justify-content: space-around;
   }
-  
+
   .form-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
+    justify-content: space-around;
+    border: thick double #B5ADC2;
+    width: 40%;
   }
   
   .form-input {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 75%;
   }
   
   #message {
@@ -29,3 +32,18 @@
     padding: 5px;
     text-align: center;
   }
+
+  #submitButton{
+    width: 90%;
+    background-color: white;
+  }
+
+  .form-input:hover{
+    background-color: #FFB3C1;
+  }
+
+  #map{
+    width: 40%;
+    border: thick double #B5ADC2;
+  }
+ 

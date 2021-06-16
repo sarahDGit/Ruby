@@ -10,60 +10,61 @@
         <link rel="stylesheet" href="contactForm.css" />
     </head>
     <body>
-        <header>
-            <div id="burger">
-                <input type="checkbox" id="burger_checkbox"/>
-                <label for="burger_checkbox"></label>
-                <ul id="menu">
-                   <li><a href="#">Menu 1</a></li>
-                   <li><a href="#">Menu 2</a></li>
-                   <li><a href="#">Menu 3</a></li>
-                   <li><a href="#">Menu 4</a></li>
-                </ul>
-              </div>        
-        </header>
-        <section>studies</section>
-         <section>technical skills</section>
-          <section>contact form </section>
-        
-     <form action="" method="get" class="form-contact">
-      <div class="form-input">
-        <label for="name">Name </label>
-        <input class="inputElement" type="text" name="name" id="name" required />
-      </div>
+      <header>
+          <div id="burger">
+              <input type="checkbox" id="burger_checkbox"/>
+              <label for="burger_checkbox"></label>
+              <ul id="menu">
+                  <li><a href="#">Menu 1</a></li>
+                  <li><a href="#">Menu 2</a></li>
+                  <li><a href="#">Menu 3</a></li>
+                  <li><a href="#">Menu 4</a></li>
+              </ul>
+            </div>        
+      </header>
+      <section>studies</section>
+      <section>technical skills</section>
 
-      <div class="form-input">
-        <label for="email">Email </label>
-        <input class="inputElement" type="email" name="email" id="email" required />
-      </div>
-         <select>
-             <option value="seen">I want to try it!</option>
-             <option value="seen">I want to order some!</option>
-         </select>
-   
+      <section id="sectionContact">
+          
+        <form action="" method="get" class="form-contact">
+          <div class="form-input">
+            <label for="name"><strong>Nom</strong></label>
+            <input class="inputElement" type="text" name="name" id="name" required />
+          </div>
 
-      <div class="form-input">
-        <label for="message">Message </label>
-        <textarea rows="5" name="message" id="message" required></textarea>
-      </div>
+          <div class="form-input">
+            <label for="email"><strong>Email</strong> </label>
+            <input class="inputElement" type="email" name="email" id="email" required />
+          </div>
+          <div class="form-input">
+            <select class="inputElement">
+                <option value="seen">Je souhaite commander des échantillons</option>
+                <option value="seen">Je souhaite en acheter</option>
+            </select>
+          </div>
 
-      <div class="form-submit">
-        <input class="inputElement" id="submitbutton" type="submit" value="Submit" />
-      </div>
-    </form>
+          <div class="form-input">
+            <label for="message"><strong>Message</strong> </label>
+            <textarea rows="5" name="message" id="message" required></textarea>
+          </div>
 
-    <iframe id="map"
-    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1334828.3776169126!2d1.0024954424036876!3d49.19891529513462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBarry%20Callebaut%20!5e0!3m2!1sen!2sfr!4v1623835242139!5m2!1sen!2sfr" 
-    width="600" 
-    height="450" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy"></iframe>
+          <div class="form-submit">
+            <input class="inputElement" id="submitButton" type="button" value="Envoyer" />
+          </div>
+        </form>
 
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="contactForm.js"></script>
+        <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1334828.3776169126!2d1.0024954424036876!3d49.19891529513462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBarry%20Callebaut%20!5e0!3m2!1sen!2sfr!4v1623835242139!5m2!1sen!2sfr" 
+        height="450" 
+        allowfullscreen="" 
+        loading="lazy"></iframe>
+      </section>
+      <footer></footer>
+
+      <script src="sweetalert.js"></script>
+      <script src="contactForm.js"></script>
     
-        <footer></footer>
     </body>
 
 

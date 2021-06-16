@@ -1,4 +1,4 @@
-const buttonElement = document.getElementById("submitbutton");
+const buttonElement = document.getElementById("submitButton");
 
 buttonElement.addEventListener("click", function (event) {
   event.preventDefault();
