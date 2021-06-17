@@ -1,37 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
-  padding: 0mm;
-  margin: 0mm;
+  padding: 0;
+  margin: 0;
 }
-ul {
+#burger ul {
     display: flex;
     flex-direction: row;
-    
-    
 }
-li {
+#menu li {
     list-style-type: none;
     padding: 30px;
     width: 25%;
-   text-align: center;
-   
-       
+   text-align: center;      
 }
-a {
-    color: #c1b3d1; 
+#menu a {
+    color: #c1b3d1;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bolder; 
-    
-    
-
+    font-weight: bolder;
 }
-a:hover{
+#menu a:hover{
   background-color: rgb(131, 50, 97);
-  
-
- 
-  
-  
 }
 #burger {
 
@@ -40,8 +30,6 @@ a:hover{
   border-style: solid;
   background-image: url(rubymenu.jpg);
   margin-block-start: 0px;
-  
-
 }
 
 
@@ -50,8 +38,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px){
   ul {
     flex-direction: column;
   }
@@ -66,8 +53,9 @@ input[type="checkbox"] {
   
   /* Gestion de la checkbox */
   input[type="checkbox"] + label:before {
-    font-family: FontAwesome;
+    font-family: 'Poppins', sans-serif;
     font-size: 50px;
+    font-weight: 700;
   }
 
   input[type="checkbox"] + label:before {
