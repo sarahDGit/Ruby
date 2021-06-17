@@ -5,26 +5,28 @@
         <title> Le chocolat Ruby </title>
         <meta name="description" content="Burger menu responsive" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="footer.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="menu.css" />
         <link rel="stylesheet" href="contactForm.css" />
     </head>
     <body>
-      <header>
-          <div id="burger">
-              <input type="checkbox" id="burger_checkbox"/>
-              <label for="burger_checkbox"></label>
-              <ul id="menu">
-                  <li><a href="#">Menu 1</a></li>
-                  <li><a href="#">Menu 2</a></li>
-                  <li><a href="#">Menu 3</a></li>
-                  <li><a href="#">Menu 4</a></li>
-              </ul>
-            </div>        
-      </header>
-      <section>studies</section>
-      <section>technical skills</section>
+      
 
+                  <header>
+            <div id="burger">
+                <input type="checkbox" id="burger_checkbox"/>
+                <label for="burger_checkbox"></label>
+                <ul id="menu">
+                   <li><a href="#">Menu 1</a></li>
+                   <li><a href="#">Menu 2</a></li>
+                   <li><a href="#">Menu 3</a></li>
+                   <li><a href="#form-contact">Contactez Nous</a></li>
+                </ul>
+              </div>        
+        </header>
+  
       <section id="sectionContact">
           
         <form action="" method="get" class="form-contact">
@@ -60,12 +62,36 @@
         allowfullscreen="" 
         loading="lazy"></iframe>
       </section>
-      <footer></footer>
+               
 
-      <script src="sweetalert.js"></script>
-      <script src="contactForm.js"></script>
     
+    
+        <footer class="footer">
+            <div class="grid">
+              <div class="footer-column">
+                <h4>Contactez nous</h4>
+                <ul>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>À propos</h4>
+                <ul>
+                  <li><a href="#">Informations</a></li>
+                  <li><a href="#">Informations</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Réseaux Sociaux</h4>
+                <div class="social-links">
+                  <a href="https://github.com/sarahDGit/Ruby"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+        </footer>
+  
+    <script src="sweetalert.js"></script>
+      <script src="contactForm.js"></script>
     </body>
-
-
 </html>
