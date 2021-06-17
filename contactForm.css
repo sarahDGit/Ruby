@@ -11,6 +11,8 @@
     display: flex;
     justify-content: space-around;
     font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin: 10px;
   }
 
   .form-contact {
@@ -54,14 +56,18 @@
     border: thick double #B5ADC2;
   }
  
-/*  @media(min-width: 767px){
-    .footer-column{
-        width: calc(100%/3);
-        padding: 0;
+
+
+  @media screen and (min-width: 767px){
+    #sectionContact{
+      flex-direction: row;
+        width: 100%;
+        
     }
 }
-@media(max-width: 574px){
-    .footer-column{
+  @media screen and (max-width: 766px){
+    #sectionContact{
+      flex-direction: column;
         width: 100%;
     }
-} */
+} 
