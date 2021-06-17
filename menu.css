@@ -1,12 +1,11 @@
-body{
+* {
+  padding: 0mm;
   margin: 0mm;
-  padding: auto;
-  cursor: url(rubysouris.jpg), auto;
 }
 ul {
     display: flex;
     flex-direction: row;
-  
+    
     
 }
 li {
@@ -14,7 +13,7 @@ li {
     padding: 30px;
     width: 25%;
    text-align: center;
- 
+   
        
 }
 a {
@@ -23,10 +22,13 @@ a {
     text-transform: uppercase;
     font-weight: bolder; 
     
+    
 
 }
 a:hover{
   background-color: rgb(131, 50, 97);
+  
+
  
   
   
@@ -38,11 +40,8 @@ a:hover{
   border-style: solid;
   background-image: url(rubymenu.jpg);
   margin-block-start: 0px;
+  
 
-}
-
-.cursor {
-  cursor: url('https://www.chocolaterie-du-luxembourg.com/519-large_default/tablette-chocolat-ruby.jpg'), auto;
 }
 
 
