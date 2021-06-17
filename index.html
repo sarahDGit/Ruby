@@ -5,59 +5,91 @@
         <title> Le chocolat Ruby </title>
         <meta name="description" content="Burger menu responsive" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="footer.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="menu.css" />
-
+        <link rel="stylesheet" href="contactForm.css" />
     </head>
     <body>
-        <header>
-            <div id ="burger">
+                        <header>
+            <div id="burger">
                 <input type="checkbox" id="burger_checkbox"/>
                 <label for="burger_checkbox"></label>
-                
+              
                 <ul id="menu">
                    <li><a href="#">Menu 1</a></li>
                    <li><a href="#">Menu 2</a></li>
                    <li><a href="#">Menu 3</a></li>
                    <li><a href="#form-contact">Contactez Nous</a></li>
                 </ul>
-              </div> 
-            
-        <section>studies</section>
-         <section>technical skills</section>
-          <section>contact form </section>
-        
-     <form action="" method="get" class="form-contact">
-      <div class="form-input">
-        <label for="name">Name </label>
-        <input type="text" name="name" id="name" required />
-      </div>
+              </div>        
+        </header>
+  
+      <section id="sectionContact">
+          
+        <form action="" method="get" class="form-contact">
+          <div class="form-input">
+            <label for="name"><strong>Nom</strong></label>
+            <input class="inputElement" type="text" name="name" id="name" required />
+          </div>
 
-      <div class="form-input">
-        <label for="email">Email </label>
-        <input type="email" name="email" id="email" required />
-      </div>
-         <select>
-             <option value="seen">I want to try it!</option>
-             <option value="seen">I want to order some!</option>
-         </select>
+          <div class="form-input">
+            <label for="email"><strong>Email</strong> </label>
+            <input class="inputElement" type="email" name="email" id="email" required />
+          </div>
+          <div class="form-input">
+            <select class="inputElement">
+                <option value="seen">Je souhaite commander des échantillons</option>
+                <option value="seen">Je souhaite en acheter</option>
+            </select>
+          </div>
+
+          <div class="form-input">
+            <label for="message"><strong>Message</strong> </label>
+            <textarea rows="5" name="message" id="message" required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <input class="inputElement" id="submitButton" type="submit" value="Envoyer" />
+          </div>
+        </form>
+
+        <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1334828.3776169126!2d1.0024954424036876!3d49.19891529513462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBarry%20Callebaut%20!5e0!3m2!1sen!2sfr!4v1623835242139!5m2!1sen!2sfr" 
+        height="450" 
+        allowfullscreen="" 
+        loading="lazy"></iframe>
+      </section>
+              
    
-
-      <div class="form-input">
-        <label for="message">Message </label>
-        <textarea rows="5" name="message" id="message" required></textarea>
-      </div>
-
-      <div class="form-submit">
-        <input id="submitbutton" type="submit" value="Submit" />
-      </div>
-    </form>
-
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="script.js"></script>
     
-        <footer></footer>
+        <footer class="footer">
+            <div class="grid">
+              <div class="footer-column">
+                <h4>Contactez nous</h4>
+                <ul>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>À propos</h4>
+                <ul>
+                  <li><a href="#">Informations</a></li>
+                  <li><a href="#">Informations</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Réseaux Sociaux</h4>
+                <div class="social-links">
+                  <a href="https://github.com/sarahDGit/Ruby"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+        </footer>
+  
+    <script src="sweetalert.js"></script>
+      <script src="contactForm.js"></script>
     </body>
-
-
 </html>
