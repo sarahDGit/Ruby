@@ -128,7 +128,7 @@ background-color: white;
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: red;
 }
 .flickity-prev-next-button.no-svg {
   color: white;
@@ -147,20 +147,34 @@ background-color: white;
   padding-top: 2px;
   margin-top: 5px;
   bottom: 1px;
-  background-color: transparent;
+  background-color: white;
 }
 /* white circles */
 .flickity-page-dots .dot {
   width: 1px;
   height: 1px;
   opacity: 10;
-  background: transparent;
-  border: 0,3px solid white;
+  background: yellowgreen;
+  border: 0,3px solid transparent;
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
   background: white;
 }
-
-
 /* fin carousel  */
+cursor{
+  cursor: url(/images/image-1.jpg);
+}
+/* mode dark 
+@media (prefers-color-scheme: dark) {
+  body {
+  background-color:;
+  color: #fefefe;
+  }
+  a {
+  color: #5fa9ee;
+  }
+  img {
+  filter: grayscale(20%);
+  }
+  }*/
