@@ -1,41 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+}
+
 #origine {
-    display: inline-grid;
-
-
+    display: grid;
 
 }
 
 .origine {
     display: grid;
+    grid-template-columns: 50vw;
     justify-content: center;
-    background-color: blanchedalmond;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 
 }
 
 h1 {
     display: grid;
     justify-content: center;
-    color: #DDB0CE;
+    text-align: center;
+    color: #DDB0CE;  
+}
 
+.chocolat1{
+    /* border: 2px solid #000; */
+    width: 400px;
+    margin: 10px auto;
+    position: relative;
+    overflow : hidden;
+}
+
+.chocolat1 img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    color: #FCF7FF;
+    /* color: #fff; */
+    background: rgba(58, 57, 59, 0.4);
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+.chocolat1:hover .content {
+    left: 0;
+}
+
+.content p{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
     
 }
+.chocolat2{
+    /* border: 2px solid #000; */
+    width: 400px;
+    margin: 10px auto;
+    position: relative;
+    overflow : hidden;
+}
+
+.chocolat2 img{
+    width: 100%;
+    height: auto;
+}
+
+.chocolat2:hover .content {
+    left: 0;
+}
+
+.chocolat3{
+    /* border: 2px solid #000; */
+    width: 400px;
+    margin: 10px auto;
+    position: relative;
+    overflow : hidden;
+}
+
+.chocolat3 img{
+    width: 100%;
+    height: auto;
+}
+
+.chocolat3:hover .content {
+    left: 0;
+}
+
+
+/*
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+#origine {
+    display: inline-grid;
+
+}
+
+.origine {
+    display: grid;
+    grid-template-columns:50vw;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: #DDB0CE;  
+}
+
 #infos {
    display: grid;
-   justify-content: center;
+   justify-content: center; 
+   text-align: center;  
    grid-template-columns:30vw 30vw 30vw;
    grid-template-rows: 20vw 20vw;
 }
 
-
-
-.contenu {
+.content {
+    display: grid;
+    justify-content: center;
     
-    background-color: crimson;
+
 
 }
 
+.image {
+
+    display: grid;
+    justify-content: center;
+}
 .img {
-    background-color: darkblue;
+    
+    max-width: 30vw;
+    max-height: 20vw;
+    
+    
 
 }
+
+
+
+ */
