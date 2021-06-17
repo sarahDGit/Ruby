@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .inputElement {
     width: 70%;
     margin: 10px;
     padding: 5px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
   }
   #sectionContact{
     display: flex;
     justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
   }
 
   .form-contact {
@@ -24,6 +28,7 @@
     justify-content: space-around;
     align-items: center;
     width: 75%;
+    font-family: 'Poppins', sans-serif;
   }
   
   #message {
@@ -31,11 +36,13 @@
     margin: 10px;
     padding: 5px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
   }
 
   #submitButton{
     width: 90%;
     background-color: white;
+    font-family: 'Poppins', sans-serif;
   }
 
   .form-input:hover{
@@ -47,3 +54,14 @@
     border: thick double #B5ADC2;
   }
  
+/*  @media(min-width: 767px){
+    .footer-column{
+        width: calc(100%/3);
+        padding: 0;
+    }
+}
+@media(max-width: 574px){
+    .footer-column{
+        width: 100%;
+    }
+} */

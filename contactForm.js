@@ -1,6 +1,6 @@
-const buttonElement = document.getElementById("submitButton");
+const formElement = document.getElementById("form-contact");
 
-buttonElement.addEventListener("click", function (event) {
+formElement.addEventListener("submit", function (event) {
   event.preventDefault();
   Swal.fire("Nous vous contacterons bientôt, stay tuned!");
 });
