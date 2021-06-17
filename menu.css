@@ -1,15 +1,51 @@
+body{
+  margin: 0mm;
+  padding: auto;
+  cursor: url(rubysouris.jpg), auto;
+}
 ul {
     display: flex;
     flex-direction: row;
+  
+    
 }
 li {
     list-style-type: none;
-    padding: 10px;
+    padding: 30px;
+    width: 25%;
+   text-align: center;
+ 
+       
 }
 a {
+    color: #c1b3d1; 
     text-decoration: none;
-    color: #000000;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    
+
 }
+a:hover{
+  background-color: rgb(131, 50, 97);
+ 
+  
+  
+}
+#burger {
+
+  background-size: 50% ;
+  border-color:black ;
+  border-style: solid;
+  background-image: url(rubymenu.jpg);
+  margin-block-start: 0px;
+
+}
+
+.cursor {
+  cursor: url('https://www.chocolaterie-du-luxembourg.com/519-large_default/tablette-chocolat-ruby.jpg'), auto;
+}
+
+
 
 input[type="checkbox"] {
   display: none;
@@ -32,7 +68,7 @@ input[type="checkbox"] {
   /* Gestion de la checkbox */
   input[type="checkbox"] + label:before {
     font-family: FontAwesome;
-    font-size: 30px;
+    font-size: 50px;
   }
 
   input[type="checkbox"] + label:before {
@@ -47,4 +83,7 @@ input[type="checkbox"] {
     content: "\f00d";
   }
 
+ 
+  
+ 
 }
