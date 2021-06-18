@@ -2,6 +2,9 @@
   padding: 0mm;
   margin: 0mm;
 }
+.cursor{
+  cursor: url("rubysouris.jpg");
+}
 ul {
     display: flex;
     flex-direction: row;
@@ -22,11 +25,15 @@ a {
     text-transform: uppercase;
     font-weight: bolder; 
     
-    
+  
+  
 
 }
 a:hover{
   background-color: rgb(131, 50, 97);
+  cursor: url(rubysouris.jpg) pointer;
+  pointer-events:url(rubysouris.jpg) ;
+ 
   
 
  
@@ -41,9 +48,10 @@ a:hover{
   background-image: url(rubymenu.jpg);
   margin-block-start: 0px;
   
-
 }
-
+.menu-burger{
+  color: white;
+}
 
 
 input[type="checkbox"] {
@@ -81,6 +89,7 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked + label:before {
     content: "\f00d";
   }
+ 
 
 
 }
