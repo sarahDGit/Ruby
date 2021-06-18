@@ -25,9 +25,7 @@ a {
     text-transform: uppercase;
     font-weight: bolder; 
     
-  
-  
-
+ 
 }
 a:hover{
   background-color: rgb(131, 50, 97);
@@ -35,10 +33,7 @@ a:hover{
   pointer-events:url(rubysouris.jpg) ;
  
   
-
- 
-  
-  
+    
 }
 #burger {
 
@@ -53,11 +48,9 @@ a:hover{
   color: white;
 }
 
-
 input[type="checkbox"] {
   display: none;
 }
-
 
 @media screen and (max-width: 640px) {
   ul {
