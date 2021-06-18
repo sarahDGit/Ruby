@@ -1,5 +1,7 @@
 
-    /* debut Menu Burger */
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+   /* debut Menu Burger */
     ul {
       display: flex;
       flex-direction: row;
@@ -54,11 +56,9 @@
 
 /* debut carousel  */
 
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; 
-background-color: white;
+* { box-sizing: border-box; 
 }
+
 
 .carousel {
   background: white;
