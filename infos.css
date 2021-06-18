@@ -5,11 +5,11 @@
 }
 
  
-#origine {
+/* #origine {
     margin-top: 100px;
     display: grid;
 
-}
+} */
 
 .origine {
     display: grid;
@@ -114,67 +114,15 @@ span {
 .chocolat3:hover .content {
     left: 0;
 }
+@media screen and (max-width: 600px) {
+    #infos {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+    }
 
-
-/*
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
+    .chocolat1 img, .chocolat2 img, .chocolat3 img {
+        width: 80vw;
+        padding-right: 100px;
+    }
 }
-
-#origine {
-    display: inline-grid;
-
-}
-
-.origine {
-    display: grid;
-    grid-template-columns:50vw;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-
-}
-
-h1 {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    color: #DDB0CE;  
-}
-
-#infos {
-   display: grid;
-   justify-content: center; 
-   text-align: center;  
-   grid-template-columns:30vw 30vw 30vw;
-   grid-template-rows: 20vw 20vw;
-}
-
-.content {
-    display: grid;
-    justify-content: center;
-    
-
-
-}
-
-.image {
-
-    display: grid;
-    justify-content: center;
-}
-.img {
-    
-    max-width: 30vw;
-    max-height: 20vw;
-    
-    
-
-}
-
-
-
- */
