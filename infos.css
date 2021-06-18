@@ -4,7 +4,9 @@
     margin: 0;
 }
 
+ 
 #origine {
+    margin-top: 100px;
     display: grid;
 
 }
@@ -24,14 +26,32 @@ h1 {
     justify-content: center;
     text-align: center;
     color: #DDB0CE;  
+} 
+
+h2 {
+    color: #FFFADE;
+}
+span {
+    color: #B5ADC2;
+}
+
+#infos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    height: 400px;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .chocolat1{
-    /* border: 2px solid #000; */
     width: 400px;
     margin: 10px auto;
     position: relative;
     overflow : hidden;
+    grid-column: 2;
+    margin-right: 50px;
 }
 
 .chocolat1 img{
@@ -40,7 +60,6 @@ h1 {
 }
 .content{
     color: #FCF7FF;
-    /* color: #fff; */
     background: rgba(58, 57, 59, 0.4);
     position: absolute;
     top: 0%;
@@ -62,15 +81,16 @@ h1 {
     
 }
 .chocolat2{
-    /* border: 2px solid #000; */
     width: 400px;
     margin: 10px auto;
     position: relative;
     overflow : hidden;
+    grid-column: 3;
+    margin-right: 50px;
 }
 
 .chocolat2 img{
-    width: 100%;
+    width: 150%;
     height: auto;
 }
 
@@ -79,15 +99,15 @@ h1 {
 }
 
 .chocolat3{
-    /* border: 2px solid #000; */
     width: 400px;
     margin: 10px auto;
     position: relative;
     overflow : hidden;
+    grid-column: 4;
 }
 
 .chocolat3 img{
-    width: 100%;
+    width: 170%;
     height: auto;
 }
 
