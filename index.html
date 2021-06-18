@@ -5,41 +5,43 @@
         <title> Le chocolat Ruby </title>
         <meta name="description" content="Burger menu responsive" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="script/flickity.css" media="screen">
-        <link rel="stylesheet" href="footer.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="footer.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="menu.css" />
         <link rel="stylesheet" href="contactForm.css"/>
         <link rel="stylesheet" href="infos.css"/>
     </head>
-    <body>
+
+    <body>  
        <header>
-            <div id="burger">
-                <input type="checkbox" id="burger_checkbox"/>
-                <label for="burger_checkbox"></label>
-              
-                <ul id="menu">
-                   <li><a href="#">Menu 1</a></li>
-                   <li><a href="#">Menu 2</a></li>
-                   <li><a href="#">Menu 3</a></li>
-                   <li><a href="#form-contact">Contactez Nous</a></li>
+
+                <div id="burger">
+               <input type="checkbox" id="burger_checkbox"/>
+              <label for="burger_checkbox"></label>
+               <ul id="menu">
+                 <li><a href="#">Menu 1</a></li>
+                 <li><a href="#">Menu 2</a></li>
+                 <li><a href="#">Menu 3</a></li>
+                 <li><a href="#form-contact">Nous Contactez</a></li>                              
                 </ul>
-              </div>   
-              <!-- carousel Flickity html init -->
-         <div class="carousel js-flickity"
-          data-flickity-options ='{ "wrapAround": true, "autoPlay": true, "initialIndex": 1, "pageDots": false }'>
-           <div class="carousel-cell"><img src="https://productdbimages.barry-callebaut.com/sites/bc_productdb_images/files/styles/web_fm_bc-880x568/public/externals/404ef476b8f0778b28ac66ac52c0ff95.jpg?itok=lLZyw-0L&_ga=2.13252023.1613908556.1623833782-892662175.1623833782" alt="macaron ruby" /></div>
-           <div class="carousel-cell"><img src="https://productdbimages.barry-callebaut.com/sites/bc_productdb_images/files/styles/web_fm_bc-880x568/public/externals/bd2b461dc9f40fb41b59f8ed3245d2a5.jpg?itok=iHjR-dsc&_ga=2.90960538.1613908556.1623833782-892662175.1623833782" alt="chocolat ruby" /></div>
-           <div class="carousel-cell"><img src="https://productdbimages.barry-callebaut.com/sites/bc_productdb_images/files/styles/web_fm_bc-880x568/public/externals/a11cc9ae56cccc778583521589ab1e21.jpg?itok=t5y2THba&_ga=2.121707275.1613908556.1623833782-892662175.1623833782"alt="macaron"/></div>
-           <div class="carousel-cell"><img src="images/image-4.jpg"alt="macaron ruby" /></div>
-            </div> <!--fin carousel-->
-       </header>
+             </div>       
+             
+<!-- carousel Flickity html init -->
+<div class="carousel js-flickity"
+   data-flickity-options ='{ "wrapAround": true, "autoPlay": true, "initialIndex": 1, "pageDots": false }'>
+   <div class="carousel-cell"><img src="https://productdbimages.barry-callebaut.com/sites/bc_productdb_images/files/styles/web_fm_bc-880x568/public/externals/404ef476b8f0778b28ac66ac52c0ff95.jpg?itok=lLZyw-0L&_ga=2.13252023.1613908556.1623833782-892662175.1623833782" alt="macaron ruby" /></div>
+    <div class="carousel-cell"><img src="https://productdbimages.barry-callebaut.com/sites/bc_productdb_images/files/styles/web_fm_bc-880x568/public/externals/bd2b461dc9f40fb41b59f8ed3245d2a5.jpg?itok=iHjR-dsc&_ga=2.90960538.1613908556.1623833782-892662175.1623833782" alt="chocolat ruby" /></div>
+     <div class="carousel-cell"><img src="https://productdbimages.barry-callebaut.com/sites/bc_productdb_images/files/styles/web_fm_bc-880x568/public/externals/a11cc9ae56cccc778583521589ab1e21.jpg?itok=t5y2THba&_ga=2.121707275.1613908556.1623833782-892662175.1623833782"alt="macaron"/></div>
+     <div class="carousel-cell"><img src="images/image-4.jpg"alt="macaron ruby" /></div>
+ </div> <!--fin carousel-->
+        </header>
 
         <div id = "origine"></div>
         <section class="origine">
           <h1>Le plus joli des chocolats : Le chocolat Ruby</h1>
-          <p>Le chocolat ruby est une variété de chocolat caractérisé par sa couleur naturellement rosé, introduite en 2017 par l'entreprise de cacao belgo-suisse <a href = "https://www.barry-callebaut.com/en/manufacturers/how-ruby-chocolate-is-made"><span> Barry Callebaut</span></a>.
+          <p>Le chocolat ruby est une variété de chocolat caractérisé par sa couleur naturellement rosé, introduite en 2017 par l'entreprise de cacao belgo-suisse <a href = "https://www.barry-callebaut.com/en/manufacturers/how-ruby-chocolate-is-made" target="_blank" ><span> Barry Callebaut</span></a>.
              En développement depuis 2004, il est dévoilé en 2017.
 
             Il est commercialisé comme le « quatrième » type de chocolat aux côtés des variétés de chocolat noir, au lait et blanc.
@@ -60,12 +62,25 @@
             </section>
           </div>
           <div class="chocolat2">
-            <img class="img" src="images/Fêve-Ruby.jpg" alt="Fêve de cacao ruby">
-            <section class="content">Utilisation</section>
+            <img class="img" src="images/Cones-Ruby.jpg" alt="Fêve de cacao ruby">
+            <section class="content">
+              <h2>Utilisation</h2>
+              <p>Le chocolat ruby comme tous les autres chocolats, peut être utiliser dans l'élaboration de gateaux, l'enrobage de glaces, la création de diverses boissons chaudes
+                et dans pleins d'autres confections.
+                Sa forte saveur de baies lui permet de se marier avec les plus étranges combinaisons, du caramel salé aux épices comme le poivre,
+                les herbes aromatiques comme le romarin, en passant par des saveurs plus étrange comme le wasabi ou des fruits exotiques (Litchi, mangue).
+              </p>
+            </section>
           </div>
           <div class="chocolat3">
-            <img class="img" src="images/Cones-Ruby.jpg" alt="Dessert cones ruby">
-            <section class="content">Barry Callebaut owns the unique processing of this pink chocolate and is its only supplier.</section>
+            <img class="img" src="images/Fêve-Ruby.jpg" alt="Dessert cones ruby">
+            <section class="content">
+              <h2>Localisation</h2>
+              <p>
+                Le procédé de fabrication de ce chocolat rose appartient à Barry Callebaut qui en est aussi le seul fournisseur.
+                <a href="#map"><span>Retrouvez</span></a> les lieux de fabrications de la marque en France et en Europe.
+              </p>
+            </section>
           </div>
         </div>
   
@@ -106,8 +121,8 @@
       </section>
               
    
-    
-        <footer class="footer">
+   
+         <footer class="footer">
             <div class="grid">
               <div class="footer-column">
                 <h4>Contactez nous</h4>
@@ -127,14 +142,18 @@
                 <h4>Réseaux Sociaux</h4>
                 <div class="social-links">
                   <a href="https://github.com/sarahDGit/Ruby"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
-        </footer>
+
+        </footer> 
   
+
     <script src="sweetalert.js"></script>
       <script src="contactForm.js"></script>
       <script src="script/flickity.pkgd.min.js"></script>
-
+      <script src="script.js"></script>
     </body>
 </html>

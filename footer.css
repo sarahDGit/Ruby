@@ -39,7 +39,7 @@ body{
 	position: relative;
 }
 
-.footer-column h4:after{
+/* .footer-column h4:after{
 	content: '';
 	position: absolute;
 	left: 0;
@@ -48,7 +48,7 @@ body{
 	height: 2px;
 	box-sizing: border-box;
 	width: 40px;
-}
+} */
 
 .footer ul li{
 	list-style-type: none;
@@ -61,7 +61,7 @@ body{
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
-	transition: 0.2s ease;
+	transition: 0.6s ease;
 }
 
 .footer ul li a:hover{

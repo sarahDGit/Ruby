@@ -1,24 +1,80 @@
 
-   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+#burger ul {
+    display: flex;
+    flex-direction: row;
+}
+#menu li {
+    list-style-type: none;
+    padding: 30px;
+    width: 25%;
+   text-align: center;      
+}
+#menu a {
+    color: #c1b3d1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+#menu a:hover{
+  background-color: rgb(131, 50, 97);
+}
+#burger {
+
+  background-size: 50% ;
+  border-color:black ;
+  border-style: solid;
+  background-image: url(rubymenu.jpg);
+  margin-block-start: 0px;
+}
+
 
    /* debut Menu Burger */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 640px){
+  ul {
+    flex-direction: column;
+     }
+    /* debut Menu Burger */
     ul {
       display: flex;
-      flex-direction: row;
-  }
+      flex-direction: row;   
+       }
   li {
       list-style-type: none;
       padding: 10px;
-  }
-  a {
+      }
+  
+      a {
       text-decoration: none;
       color: #000000;
-  }
+        }
   
+
   input[type="checkbox"] {
     display: none;
-  }
-  
+     }
+}
+
+
+  /* Gestion de la checkbox */
+  input[type="checkbox"] + label:before {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+  /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
     ul {
@@ -50,8 +106,8 @@
     input[type="checkbox"]:checked + label:before {
       content: "\f00d";
     }
-  
-  }  /*fin du menu */
+  }
+  /*fin du menu */
 
 
 /* debut carousel  */
@@ -92,6 +148,7 @@
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
           transition: opacity 0.3s, transform 0.3s, filter 0.3s;
  }
+
 
 
 /* brighten selected image */
@@ -154,7 +211,7 @@
   width: 1px;
   height: 1px;
   opacity: 10;
-  background: yellowgreen;
+  background: transparent;
   border: 0,3px solid transparent;
 }
 /* fill-in selected dot */
@@ -162,19 +219,3 @@
   background: white;
 }
 /* fin carousel  */
-cursor{
-  cursor: url(/images/image-1.jpg);
-}
-/* mode dark 
-@media (prefers-color-scheme: dark) {
-  body {
-  background-color:;
-  color: #fefefe;
-  }
-  a {
-  color: #5fa9ee;
-  }
-  img {
-  filter: grayscale(20%);
-  }
-  }*/
