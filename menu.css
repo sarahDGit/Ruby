@@ -1,4 +1,58 @@
 
+
+* {
+  padding: 0mm;
+  margin: 0mm;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+li {
+    list-style-type: none;
+    padding: 30px;
+    width: 25%;
+   text-align: center;
+   
+       
+}
+a {
+    color: #c1b3d1; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    
+    
+
+}
+a:hover{
+  background-color: rgb(131, 50, 97);
+  
+
+ 
+  
+  
+}
+#burger {
+
+  background-size: 50% ;
+  border-color:black ;
+  border-style: solid;
+  background-image: url(rubymenu.jpg);
+  margin-block-start: 0px;
+  
+
+}
+
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
     /* debut Menu Burger */
     ul {
       display: flex;
@@ -13,10 +67,17 @@
       color: #000000;
   }
   
+/* aA VERIFIER SI ENCORE BESOIN*/
   input[type="checkbox"] {
     display: none;
-  }
-  
+}
+
+  /* Gestion de la checkbox */
+  input[type="checkbox"] + label:before {
+    font-family: FontAwesome;
+    font-size: 50px;
+}
+  /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
     ul {
@@ -165,16 +226,4 @@ background-color: white;
 cursor{
   cursor: url(/images/image-1.jpg);
 }
-/* mode dark 
-@media (prefers-color-scheme: dark) {
-  body {
-  background-color:;
-  color: #fefefe;
-  }
-  a {
-  color: #5fa9ee;
-  }
-  img {
-  filter: grayscale(20%);
-  }
-  }*/
+
