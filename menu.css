@@ -40,17 +40,17 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 640px){
   ul {
+    display: flex;
     flex-direction: column;
-
+    width: 90%;
     /* debut Menu Burger */
-    
+/*     
       display: flex;
-      flex-direction: row;
+      flex-direction: row; */
       
   }
   li {
       list-style-type: none;
-      padding: 10px;
   }
   a {
       text-decoration: none;
