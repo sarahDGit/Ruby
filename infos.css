@@ -1,15 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900;1000;&display=swap');
 
 * {
     margin: 0;
 }
-
- 
-/* #origine {
-    margin-top: 100px;
-    display: grid;
-
-} */
 
 .origine {
     display: grid;
@@ -21,12 +14,27 @@
 
 }
 
-h1 {
+.origine a {
+    text-decoration: none;
+}
+
+.origine h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 900; 
     display: grid;
     justify-content: center;
     text-align: center;
     color: #DDB0CE;  
 } 
+
+.titleInfos {
+    display: grid;
+    padding-top: 20px;
+    color: #B5ADC2;
+    justify-content: center;
+}
 
 h2 {
     color: #FFFADE;
@@ -36,21 +44,22 @@ span {
 }
 
 #infos {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     display: grid;
-    height: 400px;
+    height: 600px;
     width: 100%;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr 0.2fr;
 }
 
 .chocolat1{
     width: 400px;
     margin: 10px auto;
     position: relative;
-    overflow : hidden;
-    grid-column: 2;
+    overflow : hidden; 
+    grid-column: 3;
+    grid-row: 1;
     margin-right: 50px;
 }
 
@@ -70,6 +79,34 @@ span {
     box-sizing: border-box;
     transition: all 0.5s;
 }
+
+.content a {
+    text-decoration: none;
+}
+.moreText {
+    display: none;
+}
+.read-more-btn {
+    margin-top: 15px;
+    padding: 15px 60px;
+    background-image: linear-gradient(to right, #880436, #9d3350, #b2546c, #c57288, #d891a4, #e1a0b0, #e9aebc, #f1bdc8, #f1bfc7, #f1c2c6, #f0c4c6, #efc7c6);
+    color: rgb(100,92,87,0.8);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.text.show-more .moreText{
+    display: inline; 
+    color: #FCF7FF;
+}
+
+.text.show-more .dots {
+    display:none;
+}
+
 .chocolat1:hover .content {
     left: 0;
 }
@@ -85,7 +122,8 @@ span {
     margin: 10px auto;
     position: relative;
     overflow : hidden;
-    grid-column: 3;
+    grid-column: 2;
+    grid-row: 1;
     margin-right: 50px;
 }
 
@@ -99,11 +137,12 @@ span {
 }
 
 .chocolat3{
-    width: 400px;
+    width: 418px;
     margin: 10px auto;
     position: relative;
     overflow : hidden;
     grid-column: 4;
+    grid-row: 1;
 }
 
 .chocolat3 img{
@@ -113,16 +152,4 @@ span {
 
 .chocolat3:hover .content {
     left: 0;
-}
-@media screen and (max-width: 600px) {
-    #infos {
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-    }
-
-    .chocolat1 img, .chocolat2 img, .chocolat3 img {
-        width: 80vw;
-        padding-right: 100px;
-    }
-}
+} 
