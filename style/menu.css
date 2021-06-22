@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
+  
+  
   padding: 0;
   margin: 0;
   }
@@ -17,6 +19,7 @@
     padding: 30px;
     width: 25%;
     color: white;
+    cursor:url(../images/curseurreduit.png),pointer;
     }
 
   
@@ -34,9 +37,15 @@ input[type="checkbox"] {
 
 a:hover{
   background-color: rgb(131, 50, 97);
+  cursor:url(../images/curseurreduit.png),pointer;
+  
+  
+  
+  
   }
 
  #menu { 
+  
   background-size: 50% ;
   border-color:black ;
   border-style: solid;
@@ -57,6 +66,12 @@ a:hover{
     ul {
       flex-direction: column;
     }
+    #menu{
+      background-image: url(../images/rubbismenutel.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
     
     /* Gestion de l'affichage du menu */
     input[type="checkbox"]:not(:checked) ~ ul {
@@ -64,6 +79,10 @@ a:hover{
     }
     input[type="checkbox"]:checked ~ ul {
       display: flex;
+    
+        /* background-image: url(../images/rubymenu.jpg);
+        object-fit: cover; */
+      /* background-color: chartreuse; */
     }
     
     /* Gestion de la checkbox */
@@ -141,13 +160,18 @@ a:hover{
 @media screen and ( min-width: 768px ) {
   .carousel-cell {
     height: 400px;
-  }
+      }
+     
+       
+     
+      
 }
 
 @media screen and ( min-width: 960px ) {
   .carousel-cell {
     width: 60%;
   }
+  
 }
 
 /* buttons, no circle */
