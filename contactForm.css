@@ -7,6 +7,17 @@
   padding: 10px;
   margin: 10px;
 }
+#h3Contact{
+border: 1px solid #DDB0CE;
+}
+
+#divTextContact{
+  background-color: rgba(58, 57, 59, 0.4);
+  text-align: center;
+  justify-content: center;
+ 
+}
+
 .inputElement {
     width: 70%;
     margin: 10px;
