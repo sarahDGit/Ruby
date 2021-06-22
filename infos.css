@@ -110,13 +110,12 @@ span {
 .chocolat1:hover .content {
     left: 0;
 }
-
 .content p{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    padding: 20px 0;
-    
+    padding: 20px 0; 
 }
+
 .chocolat2{
     width: 400px;
     margin: 10px auto;
@@ -129,7 +128,6 @@ span {
 
 .chocolat2 img{
     width: 150%;
-    height: auto;
 }
 
 .chocolat2:hover .content {
@@ -147,9 +145,10 @@ span {
 
 .chocolat3 img{
     width: 170%;
-    height: auto;
 }
 
 .chocolat3:hover .content {
     left: 0;
-} 
+}
+
+
