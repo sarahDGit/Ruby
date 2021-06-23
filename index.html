@@ -9,28 +9,6 @@
         <link rel="stylesheet" href="script/flickity.css" media="screen">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< HEAD
-        <link rel="stylesheet" href="menu.css" />
-        <link rel="stylesheet" href="contactForm.css" />
-        <link rel="stylesheet" href="infos.css" />*
-       
-    </head>
-    <body>
-                        <header>
-                       
-                  <div id="burger">
-                <input type="checkbox" id="burger_checkbox"/>
-                <label class = "menu-burger" for="burger_checkbox"></label>
-              
-                <ul id="menu">
-                   <li><a href="#">Menu 1</a></li>
-                   <li><a href="#">Menu 2</a></li>
-                   <li><a href="#">Menu 3</a></li>
-                   <li><a href="#form-contact">Contactez Nous</a></li>
-                </ul>
-              </div>
-              </div>        
-=======
         <link rel="stylesheet" href="style/menu.css" />
         <link rel="stylesheet" href="style/infos.css"/>
         <link rel="stylesheet" href="style/contactForm.css"/>
@@ -59,7 +37,6 @@
      <div class="carousel-cell"><img src="https://productdbimages.barry-callebaut.com/sites/bc_productdb_images/files/styles/web_fm_bc-880x568/public/externals/a11cc9ae56cccc778583521589ab1e21.jpg?itok=t5y2THba&_ga=2.121707275.1613908556.1623833782-892662175.1623833782"alt="macaron"/></div>
      <div class="carousel-cell"><img src="images/image-4.jpg"alt="macaron ruby" /></div>
  </div> <!--fin carousel-->
->>>>>>> bbb4c65ca8d956a376e8024b1ff76ba4918473d2
         </header>
 
         <div id = "origine"></div>
@@ -110,9 +87,15 @@
             </section>
           </div>
         </div>
-  
+        
+    <div id="divContact">
+      
+      <h2 id="h2Contact">Où nous trouver :</h2>
+
       <section id="sectionContact">
-          
+
+          <div class="contact-container">
+
         <form action="" method="get" class="form-contact">
           <div class="form-input">
             <label for="name"><strong>Nom</strong></label>
@@ -139,16 +122,49 @@
             <input class="inputElement" id="submitButton" type="submit" value="Envoyer" />
           </div>
         </form>
-
+      </div>
+      <div class="contact-container">
         <iframe id="map"
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1334828.3776169126!2d1.0024954424036876!3d49.19891529513462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBarry%20Callebaut%20!5e0!3m2!1sen!2sfr!4v1623835242139!5m2!1sen!2sfr" 
-        height="450" 
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1334828.3776169126!2d1.0024954424036876!3d49.19891529513462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBarry%20Callebaut%20!5e0!3m2!1sen!2sfr!4v1623835242139!5m2!1sen!2sfr"  
         allowfullscreen="" 
         loading="lazy"></iframe>
+      </div>
+        <div class="contact-container" id="divTextContact">
+          <h3 id="h3Contact">Nos adresses en France :</h3>
+          <p id="pContact">
+<br>
+🍫  Barry Callebaut France SAS
+            5, boulevard Michelet
+            BP 8 Hardricourt
+            78250 Meulan
+            France
+<br>
+            +33 1 30 22 84 00 ||
+            +33 1 30 22 84 84
+<br>
+<br>
+🍫  Barry Callebaut France SAS
+            Z.I. d'Incarville
+            Rue de la Mécanique
+            27400 Louviers
+            France
+<br>
+            +33 2 32 09 54 00 ||
+            +33 2 32 09 54 01
+<br>
+<br>
+🍫  Barry Callebaut Nord Cocoa SAS
+            Route du Développement
+            port 7522
+            59820 Gravelines
+            France
+<br>
+            +33 328 23 80 80 ||
+            +33 328 65 28 09
+          </p>
+        </div>
       </section>
-              
-   
-   
+        
          <footer class="footer">
             <div class="grid">
               <div class="footer-column">
@@ -174,16 +190,25 @@
                 </div>
               </div>
             </div>
-
         </footer> 
+<<<<<<< HEAD
   
 <<<<<<< HEAD
     <script src="sweetalert.js"></script>
       <script src="contactForm.js"></script>
       <script src="curseur.js"></script>
 =======
+=======
+        
+        <section>
+          <div id="scrollTop" class="scrollTop">
+            <a href="#burger"><button id="btnScrollTop" class="btnScrollTop"><i class="fas fa-arrow-up" ></i></button></a>
+          </div>
+        </section>
+>>>>>>> a363f8789e8c029cee19bc92f1921670cac446b4
 
-    <script src="script/sweetalert.js"></script>
+      <script src="scrollToTop.js"></script>
+      <script src="script/sweetalert.js"></script>
       <script src="script/contactForm.js"></script>
       <script src="script/flickity.pkgd.min.js"></script>
       <script src="script.js"></script>
