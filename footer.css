@@ -126,17 +126,24 @@ body {
 	cursor: pointer;
 	margin-right: 10px;
 	margin-bottom: 10px;
-	opacity: 0;
-	transition: all 0.5s;
+
 }
-.btnScrollTop:active { 
+
+.scrollTop {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.scrollTop.visible { 
 	opacity: 1;
 	pointer-events: auto;
 	
 } 
+
 .btnScrollTop i {
 	transition: all 0.3s ease;
 }
+
 .btnScrollTop:hover i{
 	padding-bottom: 10px;
 }
