@@ -1,80 +1,77 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
+  
+  
   padding: 0;
   margin: 0;
-}
-#burger ul {
+  }
+
+ ul {
     display: flex;
     flex-direction: row;
-}
-#menu li {
+    
+
+    }
+
+ li {
     list-style-type: none;
     padding: 30px;
     width: 25%;
-   text-align: center;      
-}
-#menu a {
+    color: white;
+    
+    }
+
+  
+
+ a {
     color: #c1b3d1;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
-}
-#menu a:hover{
-  background-color: rgb(131, 50, 97);
-}
-#burger {
-
-  background-size: 50% ;
-  border-color:black ;
-  border-style: solid;
-  background-image: url(rubymenu.jpg);
-  margin-block-start: 0px;
-}
-
-
+    }
 
 input[type="checkbox"] {
   display: none;
 }
 
-@media screen and (max-width: 640px){
-  ul {
-    flex-direction: column;
-
-    /* debut Menu Burger */
-    ul {
-      display: flex;
-      flex-direction: row;
-      
-  }
-  li {
-      list-style-type: none;
-      padding: 10px;
-  }
-  a {
-      text-decoration: none;
-      color: #000000;
-  }
+a:hover{
+  background-color: rgb(131, 50, 97);
+  cursor:url(../images/iconmonstr-candy-22-32.png),pointer;
   
-/* aA VERIFIER SI ENCORE BESOIN*/
-  input[type="checkbox"] {
-    display: none;
+  
+  
+  
+  }
+
+ #menu { 
+  
+  background-size: 50% ;
+  border-color:black ;
+  border-style: solid;
+  background-image: url(../images/rubymenu.jpg);
+  margin-block-start: 0px;
 }
+
+
+   /* debut Menu Burger responsive*/
 
   /* Gestion de la checkbox */
-  input[type="checkbox"] + label:before {
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-  }
+ 
 
-}
+
   /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
     ul {
       flex-direction: column;
+    }
+    #menu{
+      background-image: url(../images/rubbismenutel.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
     }
     
     /* Gestion de l'affichage du menu */
@@ -83,6 +80,10 @@ input[type="checkbox"] {
     }
     input[type="checkbox"]:checked ~ ul {
       display: flex;
+    
+        /* background-image: url(../images/rubymenu.jpg);
+        object-fit: cover; */
+      /* background-color: chartreuse; */
     }
     
     /* Gestion de la checkbox */
@@ -102,20 +103,19 @@ input[type="checkbox"] {
     input[type="checkbox"]:checked + label:before {
       content: "\f00d";
     }
-  
+  }
   /*fin du menu */
 
 
 /* debut carousel  */
 
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; 
-background-color: white;
+* { box-sizing: border-box; 
 }
 
+
 .carousel {
-  background: white;
+  background: transparent;
+  margin-top: 10px;
 }
 /* containeur carousel */
 .carousel-cell {
@@ -138,11 +138,11 @@ background-color: white;
   max-width: 100%;
   max-height: 200%;
   /* dim unselected */
-  opacity: 0.7;
+  opacity: 0.8;
   -webkit-transform: scale(0.85);
           transform: scale(0.85);
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
           transition: opacity 0.3s, transform 0.3s, filter 0.3s;
  }
@@ -161,13 +161,18 @@ background-color: white;
 @media screen and ( min-width: 768px ) {
   .carousel-cell {
     height: 400px;
-  }
+      }
+     
+       
+     
+      
 }
 
 @media screen and ( min-width: 960px ) {
   .carousel-cell {
     width: 60%;
   }
+  
 }
 
 /* buttons, no circle */
@@ -178,7 +183,7 @@ background-color: white;
   opacity: 0.6;
 }
 .flickity-prev-next-button:hover {
-  background: transparent;
+  background: white;
   opacity: 1;
 }
 /* arrow color */
@@ -209,10 +214,11 @@ background-color: white;
   width: 1px;
   height: 1px;
   opacity: 10;
-  background: yellowgreen;
+  background: transparent;
   border: 0,3px solid transparent;
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
   background: white;
-  }
+}
+/* fin carousel  */
