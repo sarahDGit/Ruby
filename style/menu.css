@@ -11,6 +11,7 @@
  ul {
     display: flex;
     flex-direction: row;
+    
 
     }
 
@@ -19,7 +20,7 @@
     padding: 30px;
     width: 25%;
     color: white;
-    cursor:url(../images/curseurreduit.png),pointer;
+    
     }
 
   
@@ -37,7 +38,7 @@ input[type="checkbox"] {
 
 a:hover{
   background-color: rgb(131, 50, 97);
-  cursor:url(../images/curseurreduit.png),pointer;
+  cursor:url(../images/iconmonstr-candy-22-32.png),pointer;
   
   
   

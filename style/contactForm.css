@@ -68,6 +68,11 @@
   @media screen and (max-width: 766px){
     #sectionContact{
       flex-direction: column;
-        width: 100%;
+      width: 235%;
+     
+      
+
+    
+      
     }
 } 
