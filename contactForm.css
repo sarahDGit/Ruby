@@ -103,7 +103,9 @@ text-align: center;
     }
     .contact-container{
       padding-bottom: 20px;
-      justify-content: center;
+      /* justify-content: center; */
+      /* align-items: center; */
+      margin-left: 22vw;
     }
     #map{
       text-align: center;
