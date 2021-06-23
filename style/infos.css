@@ -5,7 +5,9 @@
     
 }
 
+ 
 #origine {
+    margin-top: 100px;
     display: grid;
 
 }
@@ -21,27 +23,56 @@
 }
 
 h1 {
+    font-size: 35px;
     display: grid;
     justify-content: center;
     text-align: center;
     color: #DDB0CE;  
+    
+} 
+
+
+.origine p {
+font-size: 20px;
+}
+
+
+h2 {
+    color: #FFFADE;
+    
+}
+span {
+    color: #B5ADC2;
+}
+
+#infos {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    height: 400px;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .chocolat1{
-    /* border: 2px solid #000; */
     width: 400px;
     margin: 10px auto;
     position: relative;
     overflow : hidden;
+    grid-column: 2;
+    margin-right: 50px;
+    
 }
 
 .chocolat1 img{
     width: 100%;
     height: auto;
+    cursor:url(../images/curseurreduit2.png),pointer;
 }
 .content{
     color: #FCF7FF;
-    /* color: #fff; */
     background: rgba(58, 57, 59, 0.4);
     position: absolute;
     top: 0%;
@@ -51,6 +82,7 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     transition: all 0.5s;
+    cursor:url(../images/curseurreduit2.png),pointer;
 }
 .chocolat1:hover .content {
     left: 0;
@@ -63,15 +95,18 @@ h1 {
     
 }
 .chocolat2{
-    /* border: 2px solid #000; */
     width: 400px;
     margin: 10px auto;
     position: relative;
     overflow : hidden;
+    grid-column: 3;
+    margin-right: 50px;
+    cursor:url(../images/curseurreduit2.png),pointer;
+
 }
 
 .chocolat2 img{
-    width: 100%;
+    width: 150%;
     height: auto;
 }
 
@@ -80,15 +115,17 @@ h1 {
 }
 
 .chocolat3{
-    /* border: 2px solid #000; */
     width: 400px;
     margin: 10px auto;
     position: relative;
     overflow : hidden;
+    grid-column: 4;
+    cursor:url(../images/curseurreduit2.png),pointer;
+    column-width: ;
 }
 
 .chocolat3 img{
-    width: 100%;
+    width: 170%;
     height: auto;
 }
 
@@ -96,6 +133,11 @@ h1 {
     left: 0;
 }
 
+@media screen and ( min-width: 768px ) {
+ .origine {flex-direction: column
+        width: 100%;
+    }
+  }
 
 /*
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
