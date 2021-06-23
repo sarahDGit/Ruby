@@ -31,7 +31,7 @@
 
 .titleInfos {
     display: grid;
-    padding-top: 20px;
+    padding-top: 50px;
     color: #B5ADC2;
     justify-content: center;
 }
@@ -67,6 +67,9 @@ span {
     width: 100%;
     height: auto;
 }
+.contentBis {
+    display: none;
+}
 .content{
     color: #FCF7FF;
     background: rgba(58, 57, 59, 0.4);
@@ -87,7 +90,8 @@ span {
     display: none;
 }
 .read-more-btn {
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 70px;
     padding: 15px 60px;
     background-image: linear-gradient(to right, #880436, #9d3350, #b2546c, #c57288, #d891a4, #e1a0b0, #e9aebc, #f1bdc8, #f1bfc7, #f1c2c6, #f0c4c6, #efc7c6);
     color: rgb(100,92,87,0.8);
@@ -150,5 +154,77 @@ span {
 .chocolat3:hover .content {
     left: 0;
 }
+@media screen and (max-width: 600px) {
+    #sectionContact {
+        margin: 0;
+    }
 
+    #infos {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100vw;
+      height: auto;
+    }
+    .origine {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align:center;
 
+    }
+
+    .contentBis {  
+        padding-bottom: 30px;
+        padding-left: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        
+    } 
+    .contentBis h2 {
+        padding-top: 20px ;
+        padding-bottom: 20px;
+        display: flex; 
+        color: #880436;
+    }
+
+    .chocolat1:hover .content { 
+        display: none;
+    }
+    .chocolat2:hover .content {
+        display: none;
+    }
+    .chocolat3:hover .content {
+        display: none;
+    }
+
+    .read-more-btn {
+        display: none;
+    }
+
+    .chocolat1, .chocolat2, .chocolat3 {
+        max-width: fit-content;
+    }
+
+    .chocolat1 img, .chocolat2 img, .chocolat3 img {
+        display: block;
+        margin-left: 35%; 
+        width: 80%;
+        padding-right: 100px;
+    }
+    .chocolat3 {
+        margin-right: 50px;
+    }
+    .titleInfos {
+        text-align: center;
+    }
+
+} 
