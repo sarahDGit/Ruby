@@ -9,12 +9,13 @@
 }
 
 #h3Contact{
-border: 1px solid #DDB0CE;
+border: 3px solid #DDB0CE;
+text-align: center;
 }
 
 #divTextContact{
   background-color: rgba(58, 57, 59, 0.4);
-  text-align: center;
+  text-align: justify;
   /* justify-content: center; */
 }
 
