@@ -14,7 +14,7 @@ text-align: center;
 }
 
 #divTextContact{
-  background-color: rgba(58, 57, 59, 0.4);
+  background-color: rgba(58, 57, 59, 0.1);
   text-align: justify;
   /* justify-content: center; */
 }
@@ -87,7 +87,13 @@ text-align: center;
 
   @media screen and (min-width: 900px){
     #sectionContact{
-      flex-direction: row;   
+      flex-direction: row;
+    }
+    .contact-container{
+      justify-content: center;
+    }
+    #map{
+      text-align: center;
     }
 }
   @media screen and (max-width: 899px){
@@ -97,5 +103,9 @@ text-align: center;
     }
     .contact-container{
       padding-bottom: 20px;
+      justify-content: center;
+    }
+    #map{
+      text-align: center;
     }
 } 
