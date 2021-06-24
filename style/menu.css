@@ -8,7 +8,7 @@
   margin: 0;
   }
 
- #burger ul {
+  ol {
     display: flex;
     flex-direction: row;
     
@@ -47,7 +47,7 @@ a:hover{
   
   }
 
- #menu { 
+#menu { 
   
   background-size: 50% ;
   border-color:black ;
@@ -66,7 +66,7 @@ a:hover{
   /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
-    #burger ul {
+    ol {
       flex-direction: column;
     }
     #menu{
@@ -77,10 +77,10 @@ a:hover{
     }
     
     /* Gestion de l'affichage du menu */
-    input[type="checkbox"]:not(:checked) ~ ul {
+    input[type="checkbox"]:not(:checked) ~  ol {
       display: none;
     }
-    input[type="checkbox"]:checked ~ ul {
+    input[type="checkbox"]:checked ~  ol {
       display: flex;
     
         /* background-image: url(../images/rubymenu.jpg);
