@@ -6,11 +6,9 @@
   margin: 0;
   }
 
- #burger ul {
+  ul {
     display: flex;
-    flex-direction: row;
-    
-
+    flex-direction: row;  
     }
 
   #burger li {
@@ -18,6 +16,7 @@
     padding: 30px;
     width: 25%;
     color: white;    
+    text-align: center;
     }
 
   
@@ -33,7 +32,7 @@ input[type="checkbox"] {
   display: none;
   }
 
- a:hover{
+  a:hover{
   background-color: rgb(131, 50, 97);
   cursor:url(../images/iconmonstr-candy-22-32.png),pointer;
   }
@@ -60,7 +59,7 @@ input[type="checkbox"] {
   /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
-    #burger ul {
+     ul {
       flex-direction: column;
     }
     #menu{
