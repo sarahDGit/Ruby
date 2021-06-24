@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    
 }
 
 .origine {
@@ -27,6 +28,7 @@
     justify-content: center;
     text-align: center;
     color: #DDB0CE;  
+    
 } 
 
 .titleInfos {
@@ -36,8 +38,15 @@
     justify-content: center;
 }
 
+
+.origine p {
+font-size: 20px;
+}
+
+
 h2 {
     color: #FFFADE;
+    
 }
 span {
     color: #B5ADC2;
@@ -61,11 +70,13 @@ span {
     grid-column: 3;
     grid-row: 1;
     margin-right: 50px;
+    
 }
 
 .chocolat1 img{
     width: 100%;
     height: auto;
+    cursor:url(../images/curseurreduit2.png),pointer;
 }
 .contentBis {
     display: none;
@@ -81,6 +92,7 @@ span {
     padding: 20px;
     box-sizing: border-box;
     transition: all 0.5s;
+    cursor:url(../images/curseurreduit2.png),pointer;
 }
 
 .content a {
@@ -128,6 +140,8 @@ span {
     grid-column: 2;
     grid-row: 1;
     margin-right: 50px;
+    cursor:url(../images/curseurreduit2.png),pointer;
+
 }
 
 .chocolat2 img{
@@ -145,6 +159,8 @@ span {
     overflow : hidden;
     grid-column: 4;
     grid-row: 1;
+    cursor:url(../images/curseurreduit2.png),pointer;
+
 }
 
 .chocolat3 img{
@@ -227,4 +243,77 @@ span {
         text-align: center;
     }
 
-} 
+@media screen and (max-width: 600px) {
+    #sectionContact {
+        margin: 0;
+    }
+
+    #infos {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100vw;
+      height: auto;
+    }
+    .origine {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align:center;
+
+    }
+
+    .contentBis {  
+        padding-bottom: 30px;
+        padding-left: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        
+    } 
+    .contentBis h2 {
+        padding-top: 20px ;
+        padding-bottom: 20px;
+        display: flex; 
+        color: #880436;
+    }
+
+    .chocolat1:hover .content { 
+        display: none;
+    }
+    .chocolat2:hover .content {
+        display: none;
+    }
+    .chocolat3:hover .content {
+        display: none;
+    }
+
+    .read-more-btn {
+        display: none;
+    }
+
+    .chocolat1, .chocolat2, .chocolat3 {
+        max-width: fit-content;
+    }
+
+    .chocolat1 img, .chocolat2 img, .chocolat3 img {
+        display: block;
+        margin-left: 35%; 
+        width: 80%;
+        padding-right: 100px;
+    }
+    .chocolat3 {
+        margin-right: 50px;
+    }
+    .titleInfos {
+        text-align: center;
+    }
+}
+}

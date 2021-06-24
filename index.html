@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+ 
     <head>
         <meta charset="UTF-8" />
         <title> Le chocolat Ruby </title>
@@ -8,11 +9,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <link rel="stylesheet" href="script/flickity.css" media="screen">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <link rel="stylesheet" href="footer.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="menu.css" />
-        <link rel="stylesheet" href="contactForm.css" />
-        <link rel="stylesheet" href="infos.css" />
+        <link rel="stylesheet" href="style/menu.css" />
+        <link rel="stylesheet" href="style/infos.css"/>
+        <link rel="stylesheet" href="style/contactForm.css"/>
+        <link rel="stylesheet" href="style/footer.css" />
     </head>
 
     <body>  
@@ -40,7 +41,10 @@
         </header>
 
         <section class="origine">
-          <h1>Le plus joli des chocolats : Le chocolat Ruby</h1>
+          <h1>Le plus joli des chocolats 
+             <br>Le chocolat Ruby</h1>
+          </h1>
+          <br></br>
           <p>Le chocolat ruby est une variété de chocolat caractérisé par sa couleur naturellement rosé, introduite en 2017 par l'entreprise de cacao belgo-suisse <a href = "https://www.barry-callebaut.com/en/manufacturers/how-ruby-chocolate-is-made" target="_blank" ><span> Barry Callebaut</span></a>.
              En développement depuis 2004, il est dévoilé en 2017.
 
@@ -56,7 +60,7 @@
               <h2>Popularité</h2>
               <p>Le chocolat Ruby à été présenté pour la première fois à Shanghai le 5 semptembre 2017 à un évenement organisé pour l'occasion.
                  Depuis son lancement, le quatrième type de chocolat a suscité un vif intérêt auprès des connaisseurs partout dans le monde et une large gamme
-                 de produits au chocolat Ruby est désormais disponible dans les commerces de détail et les boutiques de
+                 produits au chocolat Ruby est désormais disponible dans les commerces de détail et les boutiques de
                  chocolat.
                  De nombreuses marques ont été inspirées par ce chocolat comme Nestlé avec ses Kitkat au chocolat Ruby ou encore Magnum avec sa collection Ruby.
               </p> 
@@ -72,9 +76,8 @@
               <button class="read-more-btn">Voir Plus</button>  
             </section>            
           </div>    
-            
           <div class="chocolat2">
-            <img class="img" src="images/Cones-Ruby.jpg" alt="Fêve de cacao ruby">
+            <img class="img" src="images/Cones-Ruby.jpg" alt="cones dessert ruby">
             <section class="contentBis">
               <h2>Utilisation</h2>
               <p>Le chocolat ruby comme tous les autres chocolats, peut être utiliser dans l'élaboration de gateaux, l'enrobage de glaces, la création de diverses boissons chaudes
@@ -91,10 +94,9 @@
                 les herbes aromatiques comme le romarin, en passant par des saveurs plus étrange comme le wasabi ou des fruits exotiques (Litchi, mangue).
               </p>
             </section>
-
-          </div>
+            </div>
           <div class="chocolat3">
-            <img class="img" src="images/Fêve-Ruby.jpg" alt="Dessert cones ruby">
+            <img class="img" src="images/FêveRuby.jpg" alt="Fêve de cacao ruby">
             <section class="contentBis">
               <h2>Localisation</h2>
               <p>
@@ -109,12 +111,17 @@
                 <a href="https://www.callebaut.com/fr-FR/store-locator/professional/offline?country=FR" target="_blank"><span>Retrouvez</span></a> les points de vente des produits de la marque Callebaut en France et en Europe.
               </p>
             </section>
-
-          </div>
+            </div>
         </div>
-  
+        
+    <div id="divContact">
+      
+      <h2 id="h2Contact">Où nous trouver :</h2>
+
       <section id="sectionContact">
-          
+
+          <div class="contact-container">
+
         <form action="" method="get" class="form-contact">
           <div class="form-input">
             <label for="name"><strong>Nom</strong></label>
@@ -141,16 +148,49 @@
             <input class="inputElement" id="submitButton" type="submit" value="Envoyer" />
           </div>
         </form>
-
+      </div>
+      <div class="contact-container">
         <iframe id="map"
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1334828.3776169126!2d1.0024954424036876!3d49.19891529513462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBarry%20Callebaut%20!5e0!3m2!1sen!2sfr!4v1623835242139!5m2!1sen!2sfr" 
-        height="450" 
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1334828.3776169126!2d1.0024954424036876!3d49.19891529513462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBarry%20Callebaut%20!5e0!3m2!1sen!2sfr!4v1623835242139!5m2!1sen!2sfr"  
         allowfullscreen="" 
         loading="lazy"></iframe>
+      </div>
+        <div class="contact-container" id="divTextContact">
+          <h3 id="h3Contact">Nos adresses en France :</h3>
+          <p id="pContact">
+<br>
+🍫  Barry Callebaut France SAS
+            5, boulevard Michelet
+            BP 8 Hardricourt
+            78250 Meulan
+            France
+<br>
+            +33 1 30 22 84 00 ||
+            +33 1 30 22 84 84
+<br>
+<br>
+🍫  Barry Callebaut France SAS
+            Z.I. d'Incarville
+            Rue de la Mécanique
+            27400 Louviers
+            France
+<br>
+            +33 2 32 09 54 00 ||
+            +33 2 32 09 54 01
+<br>
+<br>
+🍫  Barry Callebaut Nord Cocoa SAS
+            Route du Développement
+            port 7522
+            59820 Gravelines
+            France
+<br>
+            +33 328 23 80 80 ||
+            +33 328 65 28 09
+          </p>
+        </div>
       </section>
-              
-   
-   
+        
          <footer class="footer">
             <div class="grid">
               <div class="footer-column">
@@ -176,15 +216,22 @@
                 </div>
               </div>
             </div>
-
         </footer> 
   
-         <script src="script.js"></script>
-        <script src="script/flickity.pkgd.min.js"></script>
-         <script src="sweetalert.js"></script>
-          <script src="contactForm.js"></script>
-          <script src="infos.js"></script>
+         
+      
+        
+        <section>
+          <div id="scrollTop" class="scrollTop">
+            <a href="#burger"><button id="btnScrollTop" class="btnScrollTop"><i class="fas fa-arrow-up" ></i></button></a>
+          </div>
+        </section>
 
+      <script src="curseur.js"></script>
+      <script src="scrollToTop.js"></script>
+      <script src="script/sweetalert.js"></script>
+      <script src="script/contactForm.js"></script>
+      <script src="script/flickity.pkgd.min.js"></script>
+      <script src="script.js"></script>
     </body>
 </html>
-
