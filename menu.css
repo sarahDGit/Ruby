@@ -43,7 +43,7 @@ input[type="checkbox"] {
     flex-direction: column;
 
     /* debut Menu Burger */
-    ul {
+    
       display: flex;
       flex-direction: row;
       
@@ -215,4 +215,4 @@ background-color: white;
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
   background: white;
-  }
+  }}
