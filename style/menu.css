@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
+  
+  
   padding: 0;
   margin: 0;
   }
 
- #burger ul {
+  ul {
     display: flex;
     flex-direction: row;
     
@@ -17,8 +19,9 @@
     list-style-type: none;
     padding: 30px;
     width: 25%;
-    color: white;   
-    text-align: center; 
+    color: white;
+    text-align: center;
+    
     }
 
   
@@ -32,23 +35,24 @@
 
 input[type="checkbox"] {
   display: none;
-  }
+}
 
- a:hover{
+a:hover{
   background-color: rgb(131, 50, 97);
   cursor:url(../images/iconmonstr-candy-22-32.png),pointer;
+  
+  
+  
+  
   }
 
  #menu { 
+  
   background-size: 50% ;
   border-color:black ;
   border-style: solid;
   background-image: url(../images/rubymenu.jpg);
   margin-block-start: 0px;
-  position: fixed;
-  width: 100%;
-  margin-top: -10px;
-  z-index: 2;
 }
 
 
@@ -61,7 +65,7 @@ input[type="checkbox"] {
   /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
-    #burger ul {
+    ul {
       flex-direction: column;
     }
     #menu{
@@ -107,17 +111,15 @@ input[type="checkbox"] {
 /* debut carousel  */
 
 * { box-sizing: border-box; 
-  }
+}
 
 
 .carousel {
   background: transparent;
   margin-top: 10px;
- }
+}
 /* containeur carousel */
 .carousel-cell {
-  padding-top: 80px;
-  margin-top: 155px;
   width: 66%;
   height: 200px;
   /* flex-box, center image in cell */
@@ -129,7 +131,7 @@ input[type="checkbox"] {
           justify-content: center;
   -webkit-align-items: center;
           align-items: center;
- }
+}
 
 /* height width image */
 .carousel-cell img {
