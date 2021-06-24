@@ -6,19 +6,23 @@
   margin: 0;
   }
 
-   ul {
+ #burger ul {
     display: flex;
     flex-direction: row;
+    
+
     }
 
-  li {
+  #burger li {
     list-style-type: none;
     padding: 30px;
     width: 25%;
     color: white;    
     }
 
-a {
+  
+
+  #burger a {
     color: #c1b3d1;
     text-decoration: none;
     text-transform: uppercase;
@@ -56,7 +60,7 @@ input[type="checkbox"] {
   /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
-   ul {
+    #burger ul {
       flex-direction: column;
     }
     #menu{
