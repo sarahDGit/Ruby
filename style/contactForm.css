@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Les Titres */
+
 #h2Contact{
   color: #DDB0CE;
   display: flex;
@@ -12,11 +14,11 @@
 border: 3px solid #DDB0CE;
 text-align: center;
 }
+/* Les elements parents */
 
 #divTextContact{
   background-color: rgba(58, 57, 59, 0.1);
   text-align: justify;
-  /* justify-content: center; */
 }
 
 .contact-container{
@@ -33,8 +35,10 @@ text-align: center;
   margin: 10px; */
 }
 
+/* Le contact Form */
+
 .inputElement {
-    width: 70%;
+    width: 100%;
     margin: 10px;
     padding: 5px;
     text-align: center;
@@ -61,7 +65,7 @@ text-align: center;
   }
   
   #message {
-    width: 70%;
+    width: 100%;
     margin: 10px;
     padding: 5px;
     text-align: center;
@@ -87,7 +91,7 @@ text-align: center;
  
 
 
-  @media screen and (min-width: 900px){
+  @media screen and (min-width: 1025px){
     #sectionContact{
       flex-direction: row;
     }
@@ -98,18 +102,30 @@ text-align: center;
       text-align: center;
     }
 }
-  @media screen and (max-width: 899px){
+  @media screen and (max-width: 1024px){
+    
+    #divTextContact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
     #sectionContact{
       flex-direction: column;
       padding-bottom: 20px;
     }
     .contact-container{
       padding-bottom: 20px;
+      width: 100%;
       /* justify-content: center; */
       /* align-items: center; */
-      margin-left: 22vw;
+      /* margin-left: 22vw; */
     }
     #map{
       text-align: center;
     }
+    #pContact{
+      text-align: center;
+    }
+   
 } 
