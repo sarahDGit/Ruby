@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -74,8 +78,6 @@ body {
 	height: 30px;
 	width: 30px;
 	background-color: white;
-	margin-left: 15px;
-	margin-top: 5px;
 	text-align: center;
 	line-height: 30px;
 	border-radius: 50%;
@@ -97,8 +99,10 @@ body {
 	}
 	.grid {
 		justify-content: space-around;
-		
-
+	}
+	.social-links a {
+		margin-left: 12px;
+		margin-top: 12px;
 	}
 }
 @media(max-width: 766px) {
@@ -122,8 +126,7 @@ body {
 	color: black;
 	outline: none;
 	cursor: pointer;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 145px;
 }
 
 .scrollTop {
@@ -144,5 +147,3 @@ body {
 .btnScrollTop:hover i{
 	padding-bottom: 10px;
 }
-
-/* /////////////////////////// */
