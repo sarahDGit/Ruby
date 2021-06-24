@@ -21,13 +21,13 @@
                 <div id="burger">
                <input type="checkbox" id="burger_checkbox"/>
               <label for="burger_checkbox"></label>
-               <ul id="menu">
+               <ol id="menu">
                 
                  <li><a href="https://www.callebaut.com/fr-FR/chocolat-cacao-fruits-secs" target="_blank">Produits</a></li>
                  <li><a href="https://www.callebaut.com/fr-FR/ruby-rb1-chocolat-dans-les-desserts" target="_blank">Recettes</a></li>
                  <li><a href="https://www.callebaut.com/fr-FR/createwithruby" target="_blank">Professionnels</a></li>
                  <li><a href="#divContact">Nous Contacter</a></li>                              
-                </ul>
+                </ol>
              </div>       
              
 <!-- carousel Flickity html init -->
@@ -39,8 +39,6 @@
      <div class="carousel-cell"><img src="images/image-4.jpg"alt="macaron ruby" /></div>
  </div> <!--fin carousel-->
         </header>
-
-        <div id = "origine"></div>
         <section class="origine">
           <h1>Le plus joli des chocolats 
              <br>Le chocolat Ruby</h1>
@@ -50,24 +48,43 @@
              En développement depuis 2004, il est dévoilé en 2017.
 
             Il est commercialisé comme le « quatrième » type de chocolat aux côtés des variétés de chocolat noir, au lait et blanc.
-            Son procédé de fabrication est gardé secret, on sait cependant qu'il est fabriqué de fèves de cacao « rubis » qui lui donnent sa couleur particulière et son goût fruité.
+            Son procédé de fabrication est gardé secret, on sait cependant qu'il est fabriqué à partir de fèves de cacao « rubis » qui lui donnent sa couleur particulière et son goût fruité.
              </p>
+             <h2 class="titleInfos">Tout savoir sur le chocolat Ruby</h2>
         </section>
-        <div id = infos>
+        <div id = infos>    
           <div class="chocolat1">
             <img class="img" src="images/Magnum-Ruby.jpg" alt="Glace Magnum Ruby">
-            <section class="content">
+            <section class="contentBis">
               <h2>Popularité</h2>
               <p>Le chocolat Ruby à été présenté pour la première fois à Shanghai le 5 semptembre 2017 à un évenement organisé pour l'occasion.
                  Depuis son lancement, le quatrième type de chocolat a suscité un vif intérêt auprès des connaisseurs partout dans le monde et une large gamme
                  produits au chocolat Ruby est désormais disponible dans les commerces de détail et les boutiques de
                  chocolat.
                  De nombreuses marques ont été inspirées par ce chocolat comme Nestlé avec ses Kitkat au chocolat Ruby ou encore Magnum avec sa collection Ruby.
-                 </p>
-            </section>
-          </div>
+              </p> 
+            </section>  
+            <section class="content">
+              <h2>Popularité</h2>
+              <p class="text">Le chocolat Ruby à été présenté pour la première fois à Shanghai le 5 semptembre 2017 à un évenement organisé pour l'occasion.
+                 Depuis son lancement, le quatrième type de chocolat a suscité un vif intérêt auprès des connaisseurs partout dans le monde et une large gamme
+                 de produits au chocolat Ruby est désormais disponible dans les commerces de détail et les boutiques de
+                 chocolat.<span class="dots"> ...</span>
+                 <span class="moreText">De nombreuses marques ont été inspirées par ce chocolat comme Nestlé avec ses Kitkat au chocolat Ruby ou encore Magnum avec sa collection Ruby.</span>
+              </p>
+              <button class="read-more-btn">Voir Plus</button>  
+            </section>            
+          </div>    
           <div class="chocolat2">
             <img class="img" src="images/Cones-Ruby.jpg" alt="Fêve de cacao ruby">
+            <section class="contentBis">
+              <h2>Utilisation</h2>
+              <p>Le chocolat ruby comme tous les autres chocolats, peut être utiliser dans l'élaboration de gateaux, l'enrobage de glaces, la création de diverses boissons chaudes
+                et dans pleins d'autres confections.
+                Sa forte saveur de baies lui permet de se marier avec les plus étranges combinaisons, du caramel salé aux épices comme le poivre,
+                les herbes aromatiques comme le romarin, en passant par des saveurs plus étrange comme le wasabi ou des fruits exotiques (Litchi, mangue).
+              </p>
+            </section>
             <section class="content">
               <h2>Utilisation</h2>
               <p>Le chocolat ruby comme tous les autres chocolats, peut être utiliser dans l'élaboration de gateaux, l'enrobage de glaces, la création de diverses boissons chaudes
@@ -76,18 +93,33 @@
                 les herbes aromatiques comme le romarin, en passant par des saveurs plus étrange comme le wasabi ou des fruits exotiques (Litchi, mangue).
               </p>
             </section>
+
           </div>
+
           <div class="chocolat3">
             <img class="img" src="images/Fêve-Ruby.jpg" alt="Dessert cones ruby">
+            <section class="contentBis">
+              <h2>Localisation</h2>
+              <p>
+                Le procédé de fabrication de ce chocolat rose appartient à Barry Callebaut qui en est aussi le seul fournisseur.
+                <a href="https://www.callebaut.com/fr-FR/store-locator/professional/offline?country=FR" target="_blank"><span>Retrouvez</span></a> les points de vente des produits de la marque Callebaut en France et en Europe.
+              </p>
+            </section>
             <section class="content">
               <h2>Localisation</h2>
               <p>
                 Le procédé de fabrication de ce chocolat rose appartient à Barry Callebaut qui en est aussi le seul fournisseur.
-                <a href="#map"><span>Retrouvez</span></a> les lieux de fabrications de la marque en France et en Europe.
+                <a href="https://www.callebaut.com/fr-FR/store-locator/professional/offline?country=FR" target="_blank"><span>Retrouvez</span></a> les points de vente des produits de la marque Callebaut en France et en Europe.
               </p>
             </section>
+
           </div>
         </div>
+
+
+
+
+
         
     <div id="divContact">
       
@@ -166,7 +198,7 @@
         </div>
       </section>
         
-         <footer class="footer">
+         <footer id= "footer"class="footer">
             <div class="grid">
               <div class="footer-column">
                 <h4>Contactez nous</h4>
@@ -193,16 +225,16 @@
             </div>
         </footer> 
 
-    <script src="sweetalert.js"></script>
-      <script src="contactForm.js"></script>
-      <script src="curseur.js"></script>
+    
         
         <section>
           <div id="scrollTop" class="scrollTop">
             <a href="#burger"><button id="btnScrollTop" class="btnScrollTop"><i class="fas fa-arrow-up" ></i></button></a>
           </div>
         </section>
-
+    
+    
+      <script src="curseur.js"></script>
       <script src="scrollToTop.js"></script>
       <script src="script/sweetalert.js"></script>
       <script src="script/contactForm.js"></script>

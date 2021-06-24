@@ -8,7 +8,7 @@
   margin: 0;
   }
 
-  ul {
+  ol {
     display: flex;
     flex-direction: row;  
     }
@@ -62,7 +62,7 @@ input[type="checkbox"] {
   /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
-     ul {
+     ol {
       flex-direction: column;
     }
     #menu{
@@ -73,10 +73,10 @@ input[type="checkbox"] {
     }
     
     /* Gestion de l'affichage du menu */
-    input[type="checkbox"]:not(:checked) ~ ul {
+    input[type="checkbox"]:not(:checked) ~ ol {
       display: none;
     }
-    input[type="checkbox"]:checked ~ ul {
+    input[type="checkbox"]:checked ~ ol {
       display: flex;
     
         /* background-image: url(../images/rubymenu.jpg);
