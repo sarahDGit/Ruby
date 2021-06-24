@@ -8,10 +8,9 @@
   margin: 0;
   }
 
-  ul {
+ #burger ul {
     display: flex;
     flex-direction: row;
-    
     
 
     }
@@ -32,6 +31,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
+  
     }
 
 input[type="checkbox"] {
@@ -66,7 +66,7 @@ a:hover{
   /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
-    ul {
+    #burger ul {
       flex-direction: column;
     }
     #menu{
