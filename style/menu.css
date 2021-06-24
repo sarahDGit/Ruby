@@ -43,15 +43,17 @@ input[type="checkbox"] {
   
   
   }
-
-#menu { 
-  
-  background-size: 50% ;
-  border-color:black ;
-  border-style: solid;
-  background-image: url(../images/rubymenu.jpg);
-  margin-block-start: 0px;
-}
+  #menu { 
+    background-size: 50% ;
+    border-color:black ;
+    border-style: solid;
+    background-image: url(../images/rubymenu.jpg);
+    margin-block-start: 0px;
+    position: fixed;
+    width: 100%;
+    margin-top: -30px;
+    z-index: 2;
+  }
 
 
    /* debut Menu Burger responsive*/
@@ -114,10 +116,12 @@ input[type="checkbox"] {
 
 .carousel {
   background: transparent;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 /* containeur carousel */
 .carousel-cell {
+  padding-top: 80px;
+  margin-top: 155px;
   width: 66%;
   height: 200px;
   /* flex-box, center image in cell */
@@ -129,6 +133,7 @@ input[type="checkbox"] {
           justify-content: center;
   -webkit-align-items: center;
           align-items: center;
+
 }
 
 /* height width image */
