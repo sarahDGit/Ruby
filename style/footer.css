@@ -60,6 +60,7 @@ body {
 	text-decoration: none;
 	font-weight: 300;
 	transition: 0.6s ease;
+	
 }
 
 .footer ul li a:hover {
@@ -68,6 +69,7 @@ body {
 }
 
 .footer-column .social-links a {
+	
 	display: inline-block;
 	height: 30px;
 	width: 30px;
@@ -95,6 +97,8 @@ body {
 	}
 	.grid {
 		justify-content: space-around;
+		
+
 	}
 }
 @media(max-width: 766px) {
