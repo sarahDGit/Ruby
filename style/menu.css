@@ -147,8 +147,8 @@ input[type="checkbox"] {
           transform: scale(0.85);
   -webkit-filter: blur(1px);
           filter: blur(1px);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
-          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.2s, transform 0.2s, -webkit-filter 0.2s, filter 0.2s;
+          transition: opacity 0.3s, transform 0.2s, filter 0.2s;
  }
 
 
