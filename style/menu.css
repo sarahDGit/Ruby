@@ -28,6 +28,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
+  
     }
 
 input[type="checkbox"] {
@@ -43,7 +44,7 @@ input[type="checkbox"] {
   
   }
 
- #menu { 
+#menu { 
   
   background-size: 50% ;
   border-color:black ;
@@ -62,7 +63,7 @@ input[type="checkbox"] {
   /*A VERIFIER SI ENCORE BESOIN*/
   
   @media screen and (max-width: 640px) {
-     ol {
+    ol {
       flex-direction: column;
     }
     #menu{
@@ -73,10 +74,10 @@ input[type="checkbox"] {
     }
     
     /* Gestion de l'affichage du menu */
-    input[type="checkbox"]:not(:checked) ~ ol {
+    input[type="checkbox"]:not(:checked) ~  ol {
       display: none;
     }
-    input[type="checkbox"]:checked ~ ol {
+    input[type="checkbox"]:checked ~  ol {
       display: flex;
     
         /* background-image: url(../images/rubymenu.jpg);
