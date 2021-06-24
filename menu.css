@@ -7,33 +7,25 @@
 ul {
     display: flex;
     flex-direction: row;
-    
-    
-}
+    }
+
 li {
     list-style-type: none;
     padding: 30px;
     width: 25%;
    text-align: center;
-   
-       
-}
+   }
 a {
     color: #c1b3d1; 
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder; 
-    
-
-
-
-}
+  }
 
 a:hover{
   background-color: rgb(131, 50, 97); 
- 
-    
-}
+ }
+
 #burger {
 
   background-size: 50% ;
@@ -41,16 +33,11 @@ a:hover{
   border-style: solid;
   background-image: url(rubymenu.jpg);
   margin-block-start: 0px;
-  
-  
-  
-  
-}
+ }
 
 
 .menu-burger{
   color: white;
-  
 }
 
 input[type="checkbox"] {
@@ -63,10 +50,10 @@ input[type="checkbox"] {
   }
   
   /* Gestion de l'affichage du menu */
-  input[type="checkbox"]:not(:checked) ~ ul {
+  input[type="checkbox"]:not(:checked) ~ul {
     display: none;
   }
-  input[type="checkbox"]:checked ~ ul {
+  input[type="checkbox"]:checked ~ul {
     display: flex;
   }
   
