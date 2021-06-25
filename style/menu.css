@@ -91,6 +91,11 @@ input[type="checkbox"] {
     input[type="checkbox"] + label:before {
       font-family: FontAwesome;
       font-size: 30px;
+      margin-top: -30px;
+      margin-left: 10px;
+      position: absolute;
+      z-index: 3;
+      color:rgb(131, 50, 97);
     }
   
     input[type="checkbox"] + label:before {
@@ -120,8 +125,8 @@ input[type="checkbox"] {
 }
 /* containeur carousel */
 .carousel-cell {
-  padding-top: 80px;
-  margin-top: 155px;
+  /* padding-top: 50px; */
+  /* margin-top: 55px; */
   width: 66%;
   height: 200px;
   /* flex-box, center image in cell */
@@ -175,6 +180,8 @@ input[type="checkbox"] {
 @media screen and ( min-width: 960px ) {
   .carousel-cell {
     width: 60%;
+    margin-top: 155px;
+    margin-bottom: 140px;
   }
   
 }
