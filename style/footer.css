@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	padding: 30px 0 0 0;
+}
+
+.grid {
+	display: flex;
+}
+
+.footer-column {
+	width: 50%;
+	margin-bottom: 30px;
+	justify-content: space-around;
+}
+
+.footer-column h4 {
+	font-size: 15px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	font-weight: 500;
+	position: relative;
+}
+
+/* .footer-column h4:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	background-color:red;
+	height: 2px;
+	box-sizing: border-box;
+	width: 40px;
+} */
+
+.footer ul li {
+	list-style-type: none;
+	margin-bottom: 3px;
+}
+
+.footer ul li a {
+	font-size: 15px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	transition: 0.6s ease;
+	
+}
+
+.footer ul li a:hover {
+	color: white;
+	padding-left: 10px;
+}
+
+.footer-column .social-links a {
+	
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-color: white;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	font-size: 20px;
+	color: black;
+	transition: 0.5s ease;
+}
+
+.footer-column .social-links a:hover {
+	color:white;
+	background-color: black;
+}
+
+/* responsive mobile  */
+@media(min-width: 767px) {
+	.footer-column{
+		width: 10vw;
+		padding: 0;
+	}
+	.grid {
+		justify-content: space-around;
+	}
+	.social-links a {
+		margin-left: 12px;
+		margin-top: 12px;
+	}
+}
+@media(max-width: 766px) {
+	.footer-column{
+		width: 100%;
+	}
+}
+/* btnScrollToTop */
+
+.btnScrollTop {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #FFB3C1;
+	font-size: 25px;
+	border: none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	color: black;
+	outline: none;
+	cursor: pointer;
+	margin-bottom: 145px;
+}
+
+.scrollTop {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.scrollTop.visible { 
+	opacity: 1;
+	pointer-events: auto;
+	
+} 
+
+.btnScrollTop i {
+	transition: all 0.3s ease;
+}
+
+.btnScrollTop:hover i{
+	padding-bottom: 10px;
+}
