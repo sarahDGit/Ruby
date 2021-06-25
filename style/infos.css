@@ -214,6 +214,9 @@ span {
     display: flex; 
     color: #880436;
 }
+.contentBis a {
+    text-decoration: none;
+}
 
 .chocolat1:hover .content { 
     display: none;
